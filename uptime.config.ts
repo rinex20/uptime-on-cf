@@ -46,13 +46,24 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: '47-vps',
+      name: '47-vps',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
+      target: '47.dofun.tech:22',
+      tooltip: 'HK VPS',
+      statusPageLink: 'https://example.com',
+      timeout: 5000,
+    },
+    {
+      id: 'bwg-vps',
+      name: 'bwg-vps',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: 'bwg.dofun.tech:29534',
+      tooltip: 'BWG VPS',
       statusPageLink: 'https://example.com',
       timeout: 5000,
     },

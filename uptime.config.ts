@@ -62,7 +62,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'agnss.datasource.ltd:22',
+      target: 'agnss.datasource.ltd:29054',
       tooltip: 'AGNSS VPS',
       statusPageLink: 'https://example.com',
       timeout: 5000,

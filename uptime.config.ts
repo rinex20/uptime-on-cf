@@ -22,7 +22,7 @@ const workerConfig = {
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://wiki.datagnss.com/openai',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -34,7 +34,7 @@ const workerConfig = {
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+        Authorization: 'Bearer sk-h99jBIF1RbIfeleU0b2e3f195564426784C13f3a48F1A3Aa',
       },
       // [OPTIONAL] body to be sent
       body: 'Hello, world!',
@@ -53,6 +53,17 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: '47.dofun.tech:22',
       tooltip: 'HK VPS',
+      statusPageLink: 'https://example.com',
+      timeout: 5000,
+    },
+    {
+      id: 'agnss',
+      name: 'agnss',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'TCP_PING',
+      // `target` should be `host:port` for tcp monitors
+      target: 'agnss.datasource.ltd:22',
+      tooltip: 'AGNSS VPS',
       statusPageLink: 'https://example.com',
       timeout: 5000,
     },
